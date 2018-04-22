@@ -34,11 +34,6 @@ function convert (source, options) {
         }
 
         if (isModuleDefinition(node)) {
-
-            if (mainCallExpression) {
-                throw new Error('Found multiple module definitions in one file.');
-            }
-
             mainCallExpression = node;
         }
 

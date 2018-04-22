@@ -1,3 +1,5 @@
+import { readFile } from 'fs';
+
 var program = require('commander');
 var glob = require('glob');
 var path = require('path');
@@ -69,7 +71,7 @@ inputFiles.forEach(function (srcFile) {
 
     var context = fs.readFileSync(filePath, 'utf8');
     var compiled;
-
+    console.log(amdtoes6(readFile('test.js')))
     try {
         compiled = amdtoes6(context, {
             beautify: program.beautify
