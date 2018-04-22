@@ -71,7 +71,6 @@ inputFiles.forEach(function (srcFile) {
 
     var context = fs.readFileSync(filePath, 'utf8');
     var compiled;
-    console.log(amdtoes6(readFile('test.js')))
     try {
         compiled = amdtoes6(context, {
             beautify: program.beautify
