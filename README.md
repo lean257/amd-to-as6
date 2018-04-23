@@ -170,5 +170,5 @@ import b from 'path/to/b';
 
 ### Not Supported
 * Named define modules eg. `define('my-module', function () {})`
-* Files with multiple module definitions
+* ~~Files with multiple module definitions~~
 * UMD style modules where the callback passed to `define` is not a function literal eg. `define(factoryFn)`

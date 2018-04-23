@@ -1,5 +1,3 @@
-import { readFile } from 'fs';
-
 var program = require('commander');
 var glob = require('glob');
 var path = require('path');
